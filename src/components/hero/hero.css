@@ -1,0 +1,142 @@
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+
+.hero-title h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 4rem;
+}
+
+.fade-images{
+    position: absolute;
+    top: -40%; 
+    left: -30%;
+    z-index: -1;
+    width: 50%;
+}
+.fade-images-right{
+    position: absolute;
+    top: -50%; 
+    right: -15%;
+    z-index: -1;
+    width: 50%;
+}
+.fade-images-story{
+    position: absolute;
+    bottom: -10%; 
+    right: -15%;
+    z-index: -1;
+    width: 50%;
+}
+
+.fade-images-story img{
+    height: 80%;
+    width: 100%;
+}
+
+.fade-images-star{
+    position: absolute;
+    top: 15%; 
+    right: 7%;
+    z-index: -1;
+}
+
+.fade-images-star img{
+    width:25px;
+}
+
+.hero-right{
+    position: relative;
+}
+
+
+.fade-images-curve img{
+    height: 80%;
+    
+}
+
+.fade-images img, .fade-images-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.hero-wrapper > section{
+    height: 60vh;
+    width: 50%;
+}
+.hero-left{
+    height: auto;
+}
+.hero-right{
+    height: auto;
+}
+.hero-image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-left{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+
+}
+
+.hero-image > img{
+    object-fit: cover;
+    height: 120%;
+    width: auto;
+}
+
+.MuiButton-root {
+    background: linear-gradient(45deg, #F52AF5 30%, #00ADF2 90%);
+    border-radius: 10px;
+    border: 0;
+    width: 30%;
+    padding: 0 30px;
+    box-shadow: 0 3px 5px 2px rgba(255, 105, 135, .3);
+  }
+
+  .hero-digits{
+        display: flex;
+        flex-direction: row;
+  }
+  .hero-digits h1{
+    margin-bottom: 0;
+  }
+  .hero-digits p{
+    margin-top: 5px;
+    font-size:12px ;
+  }
+  .hero-digits > div{
+        margin: 0 1rem 0 0;
+  }
+
+
+
+
+  @media screen and (max-width: 768px){
+    .hero-wrapper{
+        flex-direction: column;
+    }
+    .hero-wrapper > section{ 
+        width: 100%;
+    }    
+}
