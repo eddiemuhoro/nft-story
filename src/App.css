@@ -2,8 +2,18 @@ body{
   background-color: #191E35;
   overflow-x: hidden;
 }
-
+h1{
+  color: aliceblue;
+}
+p{
+  color: #fff
+}
 .App{
+
+  margin: auto;
+}
+
+.hero-wrapper, .collection-wrapper{
   width: 80%;
   margin: auto;
 }

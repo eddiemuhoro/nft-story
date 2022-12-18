@@ -5,7 +5,7 @@ import Star from '../images/Star.png'
 import { Button } from '@mui/material'
 const Fade = () => {
   return (
-    <div className='hero-wrapper'>
+    <div className='hero-wrapper fade'>
 
 
     <div className='fade-images story'>

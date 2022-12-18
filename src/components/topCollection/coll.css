@@ -40,6 +40,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin: 20px;
 }
 
 .categories > div{
@@ -99,6 +100,7 @@ td img{
     height: 25px;
     width: 25px;
     object-fit: cover;
+    margin-right: 5px;
     border-radius: 50%;
 }
 .icon{
@@ -124,3 +126,45 @@ td img{
     width: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+    .collection-wrapper{
+        margin-top: 2rem;
+    }
+    .collection-wrapper h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .collection-wrapper h1::before{
+        width: 50px;
+        left: 10%;
+    }
+    .collection-wrapper h1::after{
+        width: 50px;
+        right: 10%;
+    }
+    .categories{
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .categories > div{
+        width: 40%;
+        margin: 0.5rem 0;
+    }
+    .categories p{
+        font-size: 0.8rem;
+    }
+    table th{
+        font-size: 0.8rem;
+    }
+    table td{
+        font-size: 0.8rem;
+    }
+    .fade-image-table{
+        top: -20%; 
+        left: -50%;
+        width: 100%;
+    }
+}
+    

@@ -105,7 +105,7 @@
     width: auto;
 }
 
-.MuiButton-root {
+.hero-wrapper .MuiButton-root {
     background: linear-gradient(45deg, #F52AF5 30%, #00ADF2 90%);
     border-radius: 10px;
     border: 0;
@@ -136,7 +136,14 @@
     .hero-wrapper{
         flex-direction: column;
     }
+    .fade{
+        flex-direction: column-reverse;
+    }
     .hero-wrapper > section{ 
         width: 100%;
     }    
+    .hero-image > img{
+        height: 100%;
+        width: auto;
+    }
 }

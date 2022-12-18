@@ -1,5 +1,6 @@
 
 import './App.css';
+import Acution from './components/acution/Acution';
 import Fade from './components/hero/Fade';
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
@@ -12,6 +13,7 @@ function App() {
      <Hero/>
      <Fade />
      <Collections />
+     <Acution />
     </div>
   );
 }
