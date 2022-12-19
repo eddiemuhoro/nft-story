@@ -20,7 +20,7 @@
     width: 100px;
     height: 5px;
     background: rgba(255, 255, 255, 0.31);
-    left: 15%;
+    left: 20%;
     top: 50%;
     position: absolute;
 }
@@ -30,7 +30,7 @@
     width: 100px;
     height: 5px;
     background: rgba(255, 255, 255, 0.531);
-    right: 15%;
+    right: 20%;
     top: 50%;
     position: absolute;
 }
@@ -82,7 +82,7 @@ table tr{
     vertical-align: top;
 }
 table td{
-    padding: 0 10px;
+    padding: 0 0 10px 0;
     text-align: right;
     color: #fff;
     font-size: 1rem;
@@ -102,6 +102,10 @@ td img{
     object-fit: cover;
     margin-right: 5px;
     border-radius: 50%;
+}
+
+.collection-th{
+    text-align: center;
 }
 .icon{
     display: flex;

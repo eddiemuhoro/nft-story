@@ -1,6 +1,8 @@
 
 import './App.css';
+import AboutUs from './components/aboutUs/AboutUs';
 import Acution from './components/acution/Acution';
+import Creator from './components/Creator/Creator';
 import Fade from './components/hero/Fade';
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
@@ -10,10 +12,9 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-     <Hero/>
-     <Fade />
-     <Collections />
-     <Acution />
+     <Acution/>
+     <Creator/>
+     <AboutUs/>
     </div>
   );
 }

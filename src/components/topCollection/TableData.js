@@ -9,6 +9,7 @@ const TableData = () => {
         {
             id: 2,
             name: 'Collection',
+            class:'collection-th'
         },
         {
             id: 3,
@@ -70,7 +71,7 @@ const TableData = () => {
     <div>
         <table>
             {titles.map((title) => (
-                <th key={title.id}>{title.name}</th>
+                <th className={title.class} key={title.id}>{title.name}</th>
             ))}
 
             {data.map((item) => (

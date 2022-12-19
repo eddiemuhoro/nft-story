@@ -2,6 +2,8 @@ import { Button } from '@mui/material'
 import React from 'react'
 import Eth from '../images/ethereum.png'
 import './acution.css'
+import FadeImage from '../images/FadeImage.png'
+
 const Acution = () => {
     const acutions = [
         {
@@ -22,6 +24,9 @@ const Acution = () => {
     ]
   return (
     <div>
+     <div className='fade-images-acution'>
+        <img src={FadeImage} alt='fade' />
+    </div>
         <section  className='acution-header'>
             <div className='acution-header'>
                 <h1>Live Acution</h1>
@@ -35,14 +40,18 @@ const Acution = () => {
                 {acutions.map(acution => {
                     return (
                         <div key={acution.id}>
-                            <img src={acution.src} alt={acution.id} />  
-                            <section className='bid-section'>              
-                                <div className='current-bid'>
-                                    <p>Current Bid</p>
-                                <p style={{color:'#15BFFD', display:'flex', alignItems:'center', fontWeight:'bolder'}}><img src={Eth} alt='eth'/> {acution.currentBid} ETH</p>
-                                </div>
-                                <Button sx={{bgclor:'blue'}}>Place Bid</Button>
-                            </section>
+                            <img src={acution.src} alt={acution.id} /> 
+                            <div className='bid-wrapper' style={{width:"100%",margin:'auto' }}>   
+                                <section className='bid-section'> 
+                                        
+                                    <div className='current-bid'>
+                                        <p>Current Bid</p>
+                                    <p style={{color:'#15BFFD', display:'flex', alignItems:'center', fontWeight:'bolder'}}><img src={Eth} alt='eth'/> {acution.currentBid} ETH</p>
+                                    </div>
+                                    <Button sx={{bgclor:'blue'}}>Place Bid</Button>
+                                
+                                </section>
+                            </div>  
                         </div>
                             )
                         }
