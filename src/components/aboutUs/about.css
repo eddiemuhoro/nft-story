@@ -19,12 +19,14 @@
     position: relative;
 }
 
-
 .about-content{
 width: 33%;
 }
 
 .about-images img{
     height: 100%;
-
 }
+
+/* KEYFRAMES */
+ @keyframes spin { from { transform: rotateZ(0deg); } to { transform: rotateZ(360deg); } } 
+ .center { animation: spin 60s infinite; }
