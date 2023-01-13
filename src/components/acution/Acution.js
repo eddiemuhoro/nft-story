@@ -23,7 +23,7 @@ const Acution = () => {
         }
     ]
   return (
-    <div>
+    <div style={{marginBottom:'100px'}}>
      <div className='fade-images-acution'>
         <img src={FadeImage} alt='fade' />
     </div>
